@@ -3,6 +3,7 @@ package com.example.inputuser
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -58,5 +59,9 @@ fun FormDataDiri(modifier: Modifier
             }
         )
 
+        HorizontalDivider(
+            modifier = Modifier.padding(bottom = dimensionResource(30dp),
+                top = dimensionResource(id = 30dp)),
 
+        )
 }
