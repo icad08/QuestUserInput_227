@@ -1,5 +1,7 @@
 package com.example.inputuser
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 
@@ -16,6 +18,23 @@ fun FormDataDiri(modifier: Modifier
 
     val gender:list<String> =listOf("Laki-Laki","Perempuan")
 
+    Column ( modifier = Modifier.padding(top = 50.dp),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally) {
+        OutlinedTextField(
+            value = textNama,
+            singleLine = true,
+            shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width(width = 250.dp),
+            label = { Text(text = "Nama Lengkap")},
+            onValueChange = {
+                textNama = it
+            }
+        )
 
+
+    }
+
+ }
 
 }
