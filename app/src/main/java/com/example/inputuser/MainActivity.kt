@@ -15,6 +15,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             InputUserTheme {
 
+                Surface(
+
+                )
                 {
                     FormDataDiri(modifier = Modifier.fillMaxSize())
                 }
