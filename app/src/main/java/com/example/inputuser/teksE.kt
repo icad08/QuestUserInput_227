@@ -1,9 +1,12 @@
 package com.example.inputuser
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
 
 @composable
 fun FormDataDiri(modifier: Modifier
@@ -31,8 +34,18 @@ fun FormDataDiri(modifier: Modifier
                 textNama = it
             }
         )
+        Row {
+            gender.forEach { item ->
+                Row (modifier = Modifier.selectable(
+                    selected = textJK == item,
+                    onClick = {textJK = item}
 
-
+                ), verticalAlignment = Alignment.CenterVertically) {
+                    RadioButton(
+                        selected = textJK == item,
+                        onClick = {textJK = item})
+                }
+                )
     }
 
  }
