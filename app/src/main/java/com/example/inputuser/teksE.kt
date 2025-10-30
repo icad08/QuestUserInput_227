@@ -2,13 +2,18 @@ package com.example.inputuser
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.focusModifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 
 @composable
 fun FormDataDiri(modifier: Modifier
@@ -79,5 +84,24 @@ fun FormDataDiri(modifier: Modifier
             }
         ){
             Text(text = stringResource(id = R.string.submit))
+        }
+
+        HorizontalDivider(
+            modifier = Modifier.padding(
+                buttom = dimensionResource(id = R.dimen.padding_medium),
+                top = dimensionResource(id = R.dimen.padding_medium)),
+
+            thickness = dimensionResource(1dp),
+            color = Color.DarkGray
+            )
+
+        Eleveted(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
+            colors = CardDefaults.cardColors(containerColor = Color.black),
+            modifier = Modifier
+                .height(100.dp)
+                .width(300.dp)
+        ){
+
         }
 }
