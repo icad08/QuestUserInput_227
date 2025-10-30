@@ -8,6 +8,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 
 @composable
 fun FormDataDiri(modifier: Modifier
@@ -62,8 +63,21 @@ fun FormDataDiri(modifier: Modifier
         HorizontalDivider(
             modifier = Modifier.padding(
                 bottom = dimensionResource(id = R.dimen.padding_medium),
-                top = dimensionResource(id = R.dimen.padding_medium)
-            )),
+                top = dimensionResource(id = R.dimen.padding_medium)),
+
+            thickness = dimensionResource(id = R.dimen.divider_tipis)
+            color = Color.DarkGray
 
         )
+        Button(
+            modifier = Modifier.fillMaxWidth(fraction = 1f),
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama = textNama
+                jenis=textJK
+                alamat=TextAlamat
+            }
+        ){
+            Text(text = stringResource(id = R.string.submit))
+        }
 }
