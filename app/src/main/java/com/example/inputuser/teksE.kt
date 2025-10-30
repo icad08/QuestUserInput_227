@@ -44,10 +44,11 @@ fun FormDataDiri(modifier: Modifier
                     RadioButton(
                         selected = textJK == item,
                         onClick = {textJK = item})
+                    Text(text = item)
                 }
-                )
-    }
+             }
 
- }
+        }
+
 
 }
