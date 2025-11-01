@@ -112,4 +112,6 @@ backgroundColor = lightPurple
                 focusedBorderColor = mediumPurple,
                 unfocusedBorderColor = Color.LightGray
             ),
+            shape = RoundedCornerShape(8.dp),
+            singleLine = true
     )
