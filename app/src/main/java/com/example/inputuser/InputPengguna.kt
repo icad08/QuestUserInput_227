@@ -92,6 +92,10 @@ backgroundColor = lightPurple
                         onClick = { jenisKelamin = option },
                         colors = RadioButtonDefaults.colors(selectedColor = mediumPurple)
                     )
+                    Text(
+                        text = option,
+                        modifier = Modifier.padding(start = 8.dp)
+                    )
                 }
 )
         }
