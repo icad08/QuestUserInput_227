@@ -12,3 +12,7 @@ fun RegistrationScreen(){
 
     val lightPurple = Color(0xFFF3EFFF)
     val mediumPurple = Color(0xFF673AB7)}
+
+    Scaffold (
+
+    )
