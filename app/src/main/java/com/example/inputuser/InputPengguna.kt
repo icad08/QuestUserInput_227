@@ -2,6 +2,6 @@ package com.example.inputuser
 
 @composable
 
-run RegistrationScreen(){
+fun RegistrationScreen(){
 
 }
