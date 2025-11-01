@@ -9,4 +9,6 @@ fun RegistrationScreen(){
     var statusPerkawinan by remember { mutableStateOf("") }
     val statusPerkawinanOptions = listOf("Janda", "Lajang", "Duda")
     var alamat by remember { mutableStateOf("") }
-}
+
+    val lightPurple = Color(0xFFF3EFFF)
+    val mediumPurple = Color(0xFF673AB7)}
