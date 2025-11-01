@@ -1,5 +1,6 @@
 package com.example.inputuser
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.TopAppBar
 
 @composable
@@ -74,6 +75,17 @@ backgroundColor = lightPurple
             singleLine = true
         )
         FormLabel(text = "JENIS KELAMIN")
+        Column {
+            jenisKelaminOptions.forEach { option ->
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .selectable(
+                            selected = (jenisKelamin == option),
+                            onClick = { jenisKelamin = option }
+                        )
+        }
 
 }
     )
