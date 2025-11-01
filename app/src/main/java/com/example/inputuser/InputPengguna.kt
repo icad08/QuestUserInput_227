@@ -37,5 +37,18 @@ fun RegistrationScreen(){
         color = Color.White,
         elevation = 8.dp
     )
+        {
+            Button(
+                onClick = { },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                shape = RoundedCornerShape(50),
+                colors = ButtonDefaults.buttonColors(backgroundColor = mediumPurple)
+            ) {
+                Text("Submit", color = Color.White, fontSize = 16.sp)
+            }
+        }
+    },
 }
     )
