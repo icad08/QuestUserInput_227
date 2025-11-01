@@ -128,3 +128,11 @@ fun FormLabel(text: String) {
         modifier = Modifier.padding(bottom = 8.dp)
     )
 }
+
+@Preview(showBackground = true, device = "id:pixel_5")
+@Composable
+fun DefaultPreview() {
+    FormulirPendaftaranTheme {
+        RegistrationScreen()
+    }
+}
