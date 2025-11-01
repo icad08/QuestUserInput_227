@@ -100,4 +100,12 @@ backgroundColor = lightPurple
             }
         }
         Spacer(modifier = Modifier.height(24.dp))
+
+        FormLabel(text = "ALAMAT")
+        OutlinedTextField(
+            value = alamat,
+            onValueChange = { alamat = it },
+            placeholder = { Text("Alamat") },
+            modifier = Modifier.fillMaxWidth(),
+            colors = TextFieldDefaults.outlinedTextFieldColors
     )
