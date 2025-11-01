@@ -1,5 +1,7 @@
 package com.example.inputuser
 
+import androidx.compose.material3.TopAppBar
+
 @composable
 
 fun RegistrationScreen(){
@@ -13,6 +15,17 @@ fun RegistrationScreen(){
     val lightPurple = Color(0xFFF3EFFF)
     val mediumPurple = Color(0xFF673AB7)}
 
-    Scaffold (
-
+    Scaffold(
+        topBar = {
+    TopAppBar(
+        title = {
+            Text(
+                text = "Formulir Pendaftaran",
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+        },
+        backgroundColor = mediumPurple
+    )
+        }
     )
