@@ -58,6 +58,14 @@ backgroundColor = lightPurple
             .fillMaxSize()
             .padding(innerPadding)
             .padding(24.dp)
-    )
+    ){
+        FormLabel(text = "NAMA LENGKAP")
+        OutlinedTextField(
+            value = namaLengkap,
+            onValueChange = { namaLengkap = it },
+            placeholder = { Text("Isian nama lengkap") },
+            modifier = Modifier.fillMaxWidth(),
+            colors = TextFieldDefaults.outlinedTextFieldColors
+    }
 }
     )
