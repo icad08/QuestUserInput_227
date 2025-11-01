@@ -50,5 +50,6 @@ fun RegistrationScreen(){
             }
         }
     },
+backgroundColor = lightPurple
 }
     )
