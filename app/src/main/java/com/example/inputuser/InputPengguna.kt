@@ -85,6 +85,11 @@ backgroundColor = lightPurple
                             selected = (jenisKelamin == option),
                             onClick = { jenisKelamin = option }
                         )
+                        .padding(vertical = 4.dp)
+                ) {
+
+                }
+)
         }
 
 }
