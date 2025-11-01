@@ -72,6 +72,8 @@ backgroundColor = lightPurple
             ),
             shape = RoundedCornerShape(8.dp),
             singleLine = true
-    }
+        )
+        FormLabel(text = "JENIS KELAMIN")
+
 }
     )
