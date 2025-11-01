@@ -27,5 +27,15 @@ fun RegistrationScreen(){
         },
         backgroundColor = mediumPurple
     )
-        }
+        },
+    bottomBar = {
+        Surface(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(80.dp),
+        shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp),
+        color = Color.White,
+        elevation = 8.dp
+    )
+}
     )
