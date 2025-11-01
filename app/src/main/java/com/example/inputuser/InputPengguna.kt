@@ -65,7 +65,11 @@ backgroundColor = lightPurple
             onValueChange = { namaLengkap = it },
             placeholder = { Text("Isian nama lengkap") },
             modifier = Modifier.fillMaxWidth(),
-            colors = TextFieldDefaults.outlinedTextFieldColors
+            colors = TextFieldDefaults.outlinedTextFieldColors(
+                backgroundColor = Color.White,
+                focusedBorderColor = mediumPurple,
+                unfocusedBorderColor = Color.LightGray
+            ),
     }
 }
     )
