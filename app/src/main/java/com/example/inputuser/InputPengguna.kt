@@ -59,7 +59,7 @@ backgroundColor = lightPurple
             .fillMaxSize()
             .padding(innerPadding)
             .padding(24.dp)
-    ){
+    ) {
         FormLabel(text = "NAMA LENGKAP")
         OutlinedTextField(
             value = namaLengkap,
@@ -114,4 +114,17 @@ backgroundColor = lightPurple
             ),
             shape = RoundedCornerShape(8.dp),
             singleLine = true
+        )
+    }
+}
+}
+@Composable
+fun FormLabel(text: String) {
+    Text(
+        text = text,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Gray,
+        modifier = Modifier.padding(bottom = 8.dp)
     )
+}
