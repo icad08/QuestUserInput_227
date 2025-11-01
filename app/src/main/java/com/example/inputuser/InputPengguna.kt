@@ -87,7 +87,11 @@ backgroundColor = lightPurple
                         )
                         .padding(vertical = 4.dp)
                 ) {
-
+                    RadioButton(
+                        selected = (jenisKelamin == option),
+                        onClick = { jenisKelamin = option },
+                        colors = RadioButtonDefaults.colors(selectedColor = mediumPurple)
+                    )
                 }
 )
         }
