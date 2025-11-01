@@ -107,5 +107,9 @@ backgroundColor = lightPurple
             onValueChange = { alamat = it },
             placeholder = { Text("Alamat") },
             modifier = Modifier.fillMaxWidth(),
-            colors = TextFieldDefaults.outlinedTextFieldColors
+            colors = TextFieldDefaults.outlinedTextFieldColors(
+                backgroundColor = Color.White,
+                focusedBorderColor = mediumPurple,
+                unfocusedBorderColor = Color.LightGray
+            ),
     )
