@@ -97,8 +97,7 @@ backgroundColor = lightPurple
                         modifier = Modifier.padding(start = 8.dp)
                     )
                 }
-)
+            }
         }
-
-}
+        Spacer(modifier = Modifier.height(24.dp))
     )
